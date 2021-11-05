@@ -1,0 +1,183 @@
+<html>
+<head>
+    <title>MobileNet vs Google Lens</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<center>   
+
+    <h1> CASE STUDY BETWEEN : </h1>
+
+    <div>
+        <button class="btn btn-info"> GOOGLE LENS </button>
+        <img id="glpic" src="gl.png" class="img-responsive">
+    </div>
+    <br>
+    <div>
+        <button class="btn btn-info">MOBILENET</button>
+    </div>
+
+
+    <br>
+    <br>
+
+    <ol>
+        <div class="test_image_and_result col-xs-12">
+
+            <li class="col-sm-4 col-xs-12">
+                <b>Test Image - </b>
+                <img id="test_image" src="bottle.jpeg" class="img-responsive">
+            </li>
+
+            <h5 class="col-sm-4 col-xs-12" >
+                Output on <b>GOOGLE LENS </b> - 
+                <span> Insulated Drinking Bottle, Water Bottle, Hiking Drinking Bottle  </span>
+            </h5>
+
+            <h5 class="col-sm-4 col-xs-12">
+                Output on <b>MobileNet Model</b>
+                <span> Lighter, Light, Igniter, Ignitor </span>
+            </h5>
+
+            <div class="mini_result" class="col-xs-12">
+                <h4>Result - </h4>
+                <hr>
+                <h4> GOOGLE LENS is more accurate. </h4>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <div class="test_image_and_result col-xs-12">
+
+            <li class="col-sm-4 col-xs-12">
+                <b>Test Image - </b>
+                <img id="test_image" src="cup.jpeg" class="img-responsive">
+            </li>
+
+            <h5 class="col-sm-4 col-xs-12" >
+                Output on <b>GOOGLE LENS </b> - 
+                <span> Home Centre Bone China Mugs, Home Centre Mandarin Floral Print Mugs</span>
+            </h5>
+
+            <h5 class="col-sm-4 col-xs-12">
+                Output on <b>MobileNet Model</b>
+                <span> Pitcher, Ewer, Coffee Mug </span>
+            </h5>
+
+            <div class="mini_result" class="col-xs-12">
+                <h4>Result - </h4>
+                <hr>
+                <h4> GOOGLE LENS is more accurate</h4>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <div class="test_image_and_result col-xs-12">
+
+            <li class="col-sm-4 col-xs-12">
+                <b>Test Image - </b>
+                <img id="test_image" src="dictionary.jpeg" class="img-responsive">
+            </li>
+
+            <h5 class="col-sm-4 col-xs-12" >
+                Output on <b>GOOGLE LENS </b> - 
+                <span> Oxford English Mini Dictionary</span>
+            </h5>
+
+            <h5 class="col-sm-4 col-xs-12">
+                Output on <b>MobileNet Model</b>
+                <span> Pay Phone, Pay Station </span>
+            </h5>
+
+            <div class="mini_result" class="col-xs-12">
+                <h4>Result - </h4>
+                <hr>
+                <h4> GOOGLE LENS is more accurate.</h4>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <div class="test_image_and_result col-xs-12">
+
+            <li class="col-sm-4 col-xs-12">
+                <b>Test Image - </b>
+                <img id="test_image" src="laptop.jpg" class="img-responsive">
+            </li>
+
+            <h5 class="col-sm-4 col-xs-12" >
+                Output on <b>GOOGLE LENS </b> - 
+                <span> Dell Inspiron laptop, Dell Inspiron 15 5502 15.6" Laptop Computer </span>
+            </h5>
+
+            <h5 class="col-sm-4 col-xs-12">
+                Output on <b>MobileNet Model</b>
+                <span> Screen, CTR Screen </span>
+            </h5>
+
+            <div class="mini_result" class="col-xs-12">
+                <h4>Result - </h4>
+                <hr>
+                <h4> GOOGLE LENS is more accurate</h4>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <div class="test_image_and_result col-xs-12">
+
+            <li class="col-sm-4 col-xs-12">
+                <b>Test Image - </b>
+                <img id="test_image" src="remote.jpeg" class="img-responsive">
+            </li>
+
+            <h5 class="col-sm-4 col-xs-12" >
+                Output on <b>GOOGLE LENS </b> - 
+                <span> Tata Sky Remote Control </span>
+            </h5>
+
+            <h5 class="col-sm-4 col-xs-12">
+                Output on <b>MobileNet Model</b>
+                <span> Remote Control, Remote</span>
+            </h5>
+
+            <div class="mini_result" class="col-xs-12">
+                <h4>Result - </h4>
+                <hr>
+                <h4> Draw </h4>
+            </div>
+        </div>
+        <br>
+        <br>
+    </ol>
+
+    <br>
+    <br>
+
+
+    <div id="result">
+        <h4> I have tested 5 images. 
+            <div> <b>GOOGE LENS</b> has predicted 4 of them more accurately as compared to <b>MOBILENET</b> 
+            Therefore, <b>GOOGLE LENS</b> is more accurate.
+            </div>
+        </h4>
+
+    </div>
+
+    <div class="copy_right_footer">
+        Developed By - Neer Dubey
+      </div>
+      
+</center>
+</body>
+</html>

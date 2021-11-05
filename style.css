@@ -1,0 +1,40 @@
+body{
+    background-color: rgb(212, 80, 46);
+}
+
+#glpic {
+    width: 100px;
+    height: 100px;
+}
+
+#test_image {
+    width: 150px;
+    height: 150px;
+}
+
+ol div  {
+    background-color: aquamarine;
+    color: darkblue;
+    border-radius: 20px;
+}
+
+.copy_right_footer {
+    position: initial;
+    color: rgb(124, 224, 30);
+    bottom: 0;
+    width: 90%;
+    background-color: rgb(65, 15, 247);
+    line-height: 2;
+    text-align: center;
+    border-radius: 20%;
+}
+
+#result {
+    border-radius: 20%;
+    color: rebeccapurple;
+}
+
+h1 {
+    color: white;
+}
+
